@@ -2,13 +2,14 @@
 
 import { useEffect, useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
+import type LocomotiveScrollType from "locomotive-scroll";
 
 export default function ScrollWrapper({ children }: { children: React.ReactNode }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const onLoadHandlerRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
-    let scroll: any;
+    let scroll: LocomotiveScrollType | null = null;
 
     let isMounted = true;
     (async () => {
@@ -24,7 +25,7 @@ export default function ScrollWrapper({ children }: { children: React.ReactNode 
           tablet: { smooth: true },
         });
 
-        const onLoad = () => scroll?.update?.();
+        const onLoad = () => scroll?.update();
         onLoadHandlerRef.current = onLoad;
         window.addEventListener("load", onLoad, { once: true });
       }
