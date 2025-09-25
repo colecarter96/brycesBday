@@ -26,7 +26,16 @@ export default function Home() {
           </div>
 
           {/* Second image: stick to bottom */}
-          <div className="flex justify-center items-end w-[50%] h-full">
+          <div className="flex flex-col justify-center items-center space-y-20 w-[50%] h-full">
+            <Image
+                src="/Untitled design (10)-min.png"
+                alt="Birthday Pic"
+                width={600}
+                height={600}
+                className="w-[30%]  ml-40 h-auto object-cover"
+                priority
+              />
+            
             <Image
               src="/IMG_8149-min.png"
               alt="Birthday Pic"
@@ -42,7 +51,7 @@ export default function Home() {
         <h1
           data-scroll
           data-scroll-speed="-4"
-          className="text-6xl font-bold z-10"
+          className="text-7xl font-bold z-10"
           style={{ transformOrigin: "center" }}
         >
           Happy Birthday!
@@ -52,10 +61,10 @@ export default function Home() {
         <p
           data-scroll
           data-scroll-speed="-5"
-          className="mt-20 text-2xl z-10"
+          className="mt-20 text-4xl z-10"
           style={{ transformOrigin: "center" }}
         >
-          Can&apos;t believe you&apos;re 20 bro...
+          I can&apos;t believe you&apos;re 20 bro...
         </p>
       </section>
 
@@ -63,10 +72,16 @@ export default function Home() {
         data-scroll-section
         className="h-screen flex flex-col items-center justify-center bg-white text-black"
       >
-        <h1 data-scroll data-scroll-speed="2" className="text-6xl mr-50 font-bold">
+
+        <span className="absolute top-8 left-8 text-6xl">↖</span>
+        <span className="absolute top-8 right-8 text-6xl">↗</span>
+        <span className="absolute bottom-8 left-8 text-6xl">↙</span>
+        <span className="absolute bottom-8 right-8 text-6xl">↘</span>
+
+        <h1 data-scroll data-scroll-speed="2" className="text-7xl mr-50 font-bold">
           Bryce...
         </h1>
-        <p data-scroll data-scroll-speed="-1" className="mt-10 ml-100 text-2xl">
+        <p data-scroll data-scroll-speed="-1" className="mt-10 ml-150 text-5xl">
           You are my kid brother  
         </p>
       </section>
@@ -77,11 +92,17 @@ export default function Home() {
         data-scroll-section
         className="h-screen flex items-center bg-black text-white overflow-hidden"
       >
+
+        <span className="absolute text-white top-8 left-8 text-6xl">+</span>
+        <span className="absolute text-white top-8 right-8 text-6xl">+</span>
+        <span className="absolute text-white bottom-8 left-8 text-6xl">+</span>
+        <span className="absolute text-white bottom-8 right-8 text-6xl">+</span>
+
         <div
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed="3"
-          className="text-5xl whitespace-nowrap ml-20"
+          className="text-6xl whitespace-nowrap ml-20"
         >
           We have been learning new stuff since we were little kids
         </div>
@@ -96,17 +117,22 @@ export default function Home() {
         data-scroll-section
         className="h-screen flex flex-col items-center justify-center bg-white text-black"
       >
+
+        <span className="absolute top-8 left-8 text-6xl">↖</span>
+        <span className="absolute top-8 right-8 text-6xl">↗</span>
+        <span className="absolute bottom-8 left-8 text-6xl">↙</span>
+        <span className="absolute bottom-8 right-8 text-6xl">↘</span>
         
-        <p data-scroll data-scroll-speed="-5" className="mt-10 text-2xl">
+        <p data-scroll data-scroll-speed="-5" className="mt-10 text-6xl">
           Everything from surfing,
         </p>
-        <p data-scroll data-scroll-speed="-5" className="mt-10 text-2xl">
+        <p data-scroll data-scroll-speed="-5" className="mt-10 text-6xl">
           to skating,
         </p>
-        <p data-scroll data-scroll-speed="-5" className="mt-10 text-2xl">
+        <p data-scroll data-scroll-speed="-5" className="mt-10 text-6xl">
           to kendama,
         </p>
-        <p data-scroll data-scroll-speed="-5" className="mt-10 text-2xl">
+        <p data-scroll data-scroll-speed="-5" className="mt-10 text-6xl">
           to wake surfing,
         </p>
       </section>
@@ -115,12 +141,18 @@ export default function Home() {
         data-scroll-section
         className="h-screen flex items-center overflow-hidden bg-black"
       >
+
+        <span className="absolute text-white top-8 left-8 text-6xl">+</span>
+        <span className="absolute text-white top-8 right-8 text-6xl">+</span>
+        <span className="absolute text-white bottom-8 left-8 text-6xl">+</span>
+        <span className="absolute text-white bottom-8 right-8 text-6xl">+</span>
+
         <div className="w-full overflow-hidden">
           <div
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="-3"
-            className="inline-block ml-10 text-5xl whitespace-nowrap text-white"
+            className="inline-block ml-10 text-6xl whitespace-nowrap text-white"
           >
             So, when it came to your gift this year...
           </div>
@@ -131,12 +163,18 @@ export default function Home() {
         data-scroll-section
         className="h-screen flex items-center overflow-hidden bg-white text-black"
       >
+
+        <span className="absolute top-8 left-8 text-6xl">↖</span>
+        <span className="absolute top-8 right-8 text-6xl">↗</span>
+        <span className="absolute bottom-8 left-8 text-6xl">↙</span>
+        <span className="absolute bottom-8 right-8 text-6xl">↘</span>
+
         <div className="w-full text-right overflow-hidden">
           <div
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="3"
-            className="inline-block mr-10 text-5xl whitespace-nowrap"
+            className="inline-block mr-10 text-6xl whitespace-nowrap"
           >
             I had to throw it back
           </div>
@@ -145,8 +183,14 @@ export default function Home() {
 
       <section
         data-scroll-section
-        className="h-screen flex items-center justify-center bg-blue-600 text-white shadow-2xl"
+        className="h-[80vh] flex items-center justify-center bg-blue-600 text-white shadow-2xl"
       >
+        <span className="absolute top-8 left-8 text-6xl">+</span>
+        <span className="absolute top-8 right-8 text-6xl">+</span>
+        <span className="absolute bottom-8 left-8 text-6xl">+</span>
+        <span className="absolute bottom-8 right-8 text-6xl">+</span>
+
+
         <div
           data-scroll
           data-scroll-sticky
@@ -160,42 +204,56 @@ export default function Home() {
       <section
         id="sticky-target"
         data-scroll-section
-        className="pt-40 w-full bg-white flex flex-col items-center justify-center "
+        className="h-[180vh] w-full bg-white flex"
       >
-        <div
+        {/* Left side - sticky text */}
+        <div 
           data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="3"
-          className="flex justify-center w-full mb-10"
+          data-scroll-speed="-5"
+          className="w-1/2 flex items-center justify-center"
+          style={{ transformOrigin: "center" }}
         >
-          <Image src="/EAGLE_LEGEND_STICKY_01.png" alt="Birthday Pic" width={800} height={800} className="w-[20%] h-auto" />
+          <div className="sticky top-1/2 -translate-y-1/2">
+            <h3 className="mb-2 text-3xl">Signature Model V2 - Legend Shape</h3>
+            <p className="mb-2 text-2xl">Sweets Kendamas</p>
+            <p className="mb-10 text-2xl">IN⟷TRANSIT</p>
+          </div>
         </div>
 
-        <div
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="-3"
-          className="flex justify-center w-full mb-10"
-        >
-          <Image src="/EAGLE_LEGEND_STICKY_04_1800x1800.png" alt="Birthday Pic" width={800} height={800} className="w-[20%] h-auto" />
-        </div>
+        {/* Right side - scrolling images */}
+        <div className="w-1/2 flex flex-col items-center justify-center">
+          <div
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+            className="flex justify-center w-full mb-10"
+          >
+            <Image
+              src="/EAGLE_LEGEND_STICKY_01.png"
+              alt="Birthday Pic"
+              width={800}
+              height={800}
+              className="w-[60%] h-auto"
+            />
+          </div>
 
-        <div
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="3"
-          className="flex justify-center w-full mb-10"
-        >
-          <Image src="/Screenshot2025-04-10at5.20.14PM.png" alt="Birthday Pic" width={800} height={800} className="w-[20%] h-auto" />
+          <div
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+            className="flex justify-center w-full mb-10"
+          >
+            <Image
+              src="/EAGLE_LEGEND_STICKY_04_1800x1800.png"
+              alt="Birthday Pic"
+              width={800}
+              height={800}
+              className="w-[60%] h-auto"
+            />
+          </div>
         </div>
-
-        <div className="flex flex-col justify-left">
-          <h3 className="mb-2 text-3xl text-center">Signature Model V2 - Legend Shape</h3>
-          <p className="mb-2 text-2xl text-center">Sweets Kendamas</p>
-          <p className="mb-10 text-2xl text-center">IN⟷TRANSIT</p>
-        </div>
-        
       </section>
+
 
     </div>
   );

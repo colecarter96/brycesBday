@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ScrollWrapper from "./components/ScrollWrapper";
+import MusicWidget from "./components/MusicWidget";
 import localFont from "next/font/local";
 
 const yourFont = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({
         <ScrollWrapper>
           {children}
         </ScrollWrapper>
+        <MusicWidget /> {/* always floating in bottom-right */}
       </body>
     </html>
   );
