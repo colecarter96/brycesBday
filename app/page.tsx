@@ -153,7 +153,7 @@ export default function Home() {
           data-scroll-target="#sticky-target"
           className="text-6xl"
         >
-          Let's play a game of KEN ↓
+          Let&apos;s play a game of KEN ↓
         </div>
       </section>
 
