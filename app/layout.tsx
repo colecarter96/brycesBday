@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollWrapper from "./components/ScrollWrapper";
 import localFont from "next/font/local";
@@ -12,15 +11,7 @@ const yourFont = localFont({
   display: "swap",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Removed unused Google font variables to satisfy lints
 
 export const metadata: Metadata = {
   title: "Bryce's Bday Gift",

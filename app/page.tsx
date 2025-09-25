@@ -15,19 +15,25 @@ export default function Home() {
         >
           {/* First image: centered */}
           <div className="flex justify-center items-center w-[50%] h-full">
-            <img
+            <Image
               src="/IMG_1309-min.png"
               alt="Birthday Pic"
-              className="w-[40%] object-cover"
+              width={800}
+              height={800}
+              className="w-[40%] h-auto object-cover"
+              priority
             />
           </div>
 
           {/* Second image: stick to bottom */}
           <div className="flex justify-center items-end w-[50%] h-full">
-            <img
+            <Image
               src="/IMG_8149-min.png"
               alt="Birthday Pic"
-              className="w-[30%] object-cover"
+              width={800}
+              height={800}
+              className="w-[30%] h-auto object-cover"
+              priority
             />
           </div>
         </div>
@@ -49,7 +55,7 @@ export default function Home() {
           className="mt-20 text-2xl z-10"
           style={{ transformOrigin: "center" }}
         >
-          Can't believe you're 20 bro...
+          Can&apos;t believe you&apos;re 20 bro...
         </p>
       </section>
 
@@ -162,7 +168,7 @@ export default function Home() {
           data-scroll-speed="3"
           className="flex justify-center w-full mb-10"
         >
-          <img src="/EAGLE_LEGEND_STICKY_01.png" alt="Birthday Pic" className="w-[20%]" />
+          <Image src="/EAGLE_LEGEND_STICKY_01.png" alt="Birthday Pic" width={800} height={800} className="w-[20%] h-auto" />
         </div>
 
         <div
@@ -171,7 +177,7 @@ export default function Home() {
           data-scroll-speed="-3"
           className="flex justify-center w-full mb-10"
         >
-          <img src="/EAGLE_LEGEND_STICKY_04_1800x1800.png" alt="Birthday Pic" className="w-[20%]" />
+          <Image src="/EAGLE_LEGEND_STICKY_04_1800x1800.png" alt="Birthday Pic" width={800} height={800} className="w-[20%] h-auto" />
         </div>
 
         <div
@@ -180,7 +186,7 @@ export default function Home() {
           data-scroll-speed="3"
           className="flex justify-center w-full mb-10"
         >
-          <img src="/Screenshot2025-04-10at5.20.14PM.png" alt="Birthday Pic" className="w-[20%]" />
+          <Image src="/Screenshot2025-04-10at5.20.14PM.png" alt="Birthday Pic" width={800} height={800} className="w-[20%] h-auto" />
         </div>
 
         <div className="flex flex-col justify-left">

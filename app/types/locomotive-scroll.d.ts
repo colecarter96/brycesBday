@@ -8,7 +8,7 @@ declare module "locomotive-scroll" {
       direction?: "vertical" | "horizontal";
       smartphone?: { smooth?: boolean; breakpoint?: number };
       tablet?: { smooth?: boolean; breakpoint?: number };
-      [key: string]: any;
+      [key: string]: unknown;
     }
   
     export default class LocomotiveScroll {
@@ -17,12 +17,12 @@ declare module "locomotive-scroll" {
       destroy(): void;
       start(): void;
       stop(): void;
-      on(event: string, callback: (...args: any[]) => void): this;
-      off(event: string, callback: (...args: any[]) => void): this;
+      on(event: string, callback: (...args: unknown[]) => void): this;
+      off(event: string, callback: (...args: unknown[]) => void): this;
       scrollTo(target: HTMLElement | string | number, options?: { offset?: number; duration?: number; easing?: string }): void;
       setScroll(y: number): void;
       // fallback for anything else
-      [key: string]: any;
+      [key: string]: unknown;
     }
   }
   
